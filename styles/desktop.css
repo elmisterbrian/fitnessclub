@@ -1,0 +1,15 @@
+.cards-container .card {
+    margin-right: 10px;
+}
+.info-container .info-container--text {
+    font-size: 2rem;
+}
+.article-section-info {
+    font-size: 1.6rem;
+}
+
+.cards-plans-container .plan {
+    max-width: 250px;
+    font-size: 1.4rem;
+    height: 290px;
+}

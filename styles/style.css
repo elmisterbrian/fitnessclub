@@ -1,0 +1,267 @@
+:root {
+    --aqua: #0cc0df;
+    --card-shadow-color: #6e6e6e8f;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+}
+.principal-container {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(90deg,#000000, #737373);
+}
+.principal-container--title{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.principal-container .principal-container--title h1{
+    color: var(--aqua);
+    font-family: 'Protest Riot', sans-serif;
+    font-size: 6.5rem;
+    box-shadow: 3px -5px 19px 3px;
+    border-radius: 5px;
+    padding: 4px;
+}
+.principal-container .principal-container--title p {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.principal-container .principal-container--plans {
+position: relative;
+width: 150px;
+height: 50px;
+bottom: 10rem;
+left: calc(50% - 70px);
+padding-top: 5px;
+font-size: 2.4rem;
+font-weight: bold;
+text-align: center;
+border-radius: 5px;
+background-color: #fff;
+}
+.principal-container .principal-container--plans a {
+    text-decoration: none;
+    color: black;
+}
+.principal-container .principal-container--plans span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url('../icons/747894.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Hasta aqui llega el header */
+
+.info-container {
+    width: 100%;
+    height: 600px;
+    background-image: url('../images/fisiogym-background-mobile1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.info-container .info-container--text {
+    color: #fff;
+    height: 600px;
+    font-size: 1.8rem;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+}
+.info-container .info-container--text h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.info-container .info-container--text p {
+    font-weight: bold;
+}
+.article-section-info {
+    margin-top: 50px;
+    font-size: 1.2rem;
+    padding-left: 15px;
+}
+/* hasta aquí seccion de foto con info */
+
+.principal-cards-container {
+    width: 100%;
+    height: auto;
+}
+.principal-cards-container .cards-container {
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.cards-container .card {
+    position: relative;
+    width: 75%;
+    max-width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    box-shadow: 0px -1px 6px 7px #6e6e6e8f;
+    border-radius: 5px;
+}
+.cards-container .card-photo {
+    display: inline-block;
+    position: absolute;
+    top: -30px;
+    left: calc(50% - 30px);
+    width: 60px;
+    height: 60px;
+    background-image: url('../images/markito.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100px;
+    border: 3px solid lightskyblue;
+}
+.cards-container .card .card-photo_2, .card-photo_3 {
+   display: inline-block;
+   width: 60px;
+   height: 60px;
+   position: absolute;
+   top: -30px;
+   left: calc(50% - 30px);
+   background-image: url('../images/guille.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+   border-radius: 100px;
+   border: 3px solid lightskyblue;
+}
+.card-photo_3 {
+    background-image: url('../images/chicas-fit-maddie-z.jpg.webp');
+}
+.cards-container .card p {
+    font-size: 1.4rem;
+    padding: 7px;
+    margin-top: 10px;
+}
+ .cards-container .card .card--header {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.gallery-container {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    background: linear-gradient(90deg,#000000, #737373)
+}
+.gallery-container p {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-top: 10px;
+    text-align: center;
+}
+.gallery-container .img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.gallery-container .img-container img {
+    width: 50vw;
+    height: auto;
+    max-width: 300px;
+    margin: 30px 5px 0;
+    border-radius: 5px;
+}
+/* Hasta aquí llega la galería d fotos */
+
+.plans-price {
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+.plans-price .plans-price__info {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+.cards-plans-container {
+    display: flex;
+    width: 100%;
+    height: 75vh;
+    align-items: center;
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    scroll-behavior: auto;
+}
+.cards-plans-container .plan {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 260px;
+    max-width: 200px;
+    margin: 5px;
+    background-color: #fff;
+    border: 2px solid lightskyblue;
+    border-radius: 5px;
+    scroll-snap-align: center;
+}
+.plan .plan-card__header {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
+.plan .plan-card__price {
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+.plan .plan-card__list-header {
+    margin-left: 5px;
+}
+.plan ul, li {
+    margin-left: 7px;
+    padding: 5px 2px 0;
+}
+.plan button {
+    width: 100px;
+    height: 30px;
+    margin-top: 5px;
+    border: 2px solid lightblue;
+    border-radius: 2px;
+    background-color: white;
+    align-self: center;
+}
+footer {
+    background-color: black;
+    color: #898989;
+    font-size: 1.2rem;
+    height: 100px;
+
+}
+footer .remember {
+    position: relative;
+    bottom: 0;
+}
+footer a {
+    color: #898989;
+}
+/* @media (min-width: 768px){
+.info-container {
+    background-image: url('../images/fisiogim-background.png');
+    poner justify content space around en cards plans container en los media queries
+} 
+} */

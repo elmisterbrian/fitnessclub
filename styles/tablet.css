@@ -1,0 +1,8 @@
+.info-container {
+    background-image: url('../images/fisiogim-background1.png');}
+    .principal-cards-container .cards-container {
+        justify-content: space-around;
+    }
+    .cards-plans-container {
+        justify-content: space-around;
+    }
